@@ -1,0 +1,12 @@
+<svg width="512" height="256" viewBox="0 0 512 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g filter="url(#f)">
+    <path d="M40 160c60-60 180-100 300-90 30 2 100 20 120 40-40 10-70 10-110 0-120-30-210 20-240 50-20 20-40 10-70 0z" fill="#0b1020"/>
+    <path d="M180 130c20-15 70-35 120-30 20 2 40 10 50 18-60-8-120 2-170 36 0 0-15 5-20 4 2-7 10-18 20-28z" fill="#d7ecff"/>
+    <circle cx="410" cy="112" r="6" fill="#d7ecff"/>
+  </g>
+  <defs>
+    <filter id="f" x="0" y="0" width="512" height="256" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" />
+    </filter>
+  </defs>
+</svg>

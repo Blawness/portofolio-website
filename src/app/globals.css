@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+:root {
+  /* Orca-inspired palette */
+  --background: #031224; /* deep ocean */
+  --foreground: #e6f1ff; /* icy highlights */
+
+  --orcablue-900: #020a14;
+  --orcablue-800: #031526;
+  --orcablue-700: #06213b;
+  --orcablue-600: #0a2e53;
+  --orcablue-500: #0f3e6e;
+  --orcablue-400: #16518c;
+  --orcablue-300: #2c6bad;
+  --orcablue-200: #5f95ce;
+  --orcablue-100: #b9d6f2;
+
+  --orca-ink: #0b1020;   /* orca black */
+  --orca-ice: #d7ecff;   /* orca white */
+}
+
+@theme inline {
+  /* Map CSS variables into Tailwind tokens */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-orca-ink: var(--orca-ink);
+  --color-orca-ice: var(--orca-ice);
+  --color-orcablue-100: var(--orcablue-100);
+  --color-orcablue-200: var(--orcablue-200);
+  --color-orcablue-300: var(--orcablue-300);
+  --color-orcablue-400: var(--orcablue-400);
+  --color-orcablue-500: var(--orcablue-500);
+  --color-orcablue-600: var(--orcablue-600);
+  --color-orcablue-700: var(--orcablue-700);
+  --color-orcablue-800: var(--orcablue-800);
+  --color-orcablue-900: var(--orcablue-900);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Base application surface */
+html, body {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(1200px 800px at 70% -10%, rgba(44, 107, 173, 0.25), rgba(3, 18, 36, 0)),
+              radial-gradient(1000px 700px at -10% 30%, rgba(15, 62, 110, 0.35), rgba(3, 18, 36, 0)),
+              linear-gradient(180deg, #031224 0%, #020a14 100%);
+  color: var(--foreground);
+}
+
+/* Subtle noise-like texture via mask for depth */
+.bg-orca-depth {
+  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 12px 12px;
+  mask-image: radial-gradient(circle at 50% 50%, black 40%, transparent 70%);
+}
+
+/* Utility for glass panels */
+.glass {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.08),
+    rgba(255, 255, 255, 0.03)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+}
