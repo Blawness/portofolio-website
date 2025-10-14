@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { getProjects, urlFor, type Project } from "@/lib/sanity";
+import { getProjects, urlFor } from "@/lib/sanity";
 import Image from "next/image";
+import Link from "next/link";
 
 export default async function Home() {
   const projects = await getProjects();
@@ -77,7 +78,7 @@ export default async function Home() {
           className="pointer-events-none absolute inset-x-0 bottom-[-60px] flex justify-center opacity-20"
           aria-hidden
         >
-          <img src="/orca.svg" alt="Orca silhouette" className="h-[200px] w-auto" />
+          <Image src="/orca.svg" alt="Orca silhouette" width={400} height={200} className="h-[200px] w-auto" />
         </div>
       </section>
 
@@ -136,7 +137,7 @@ export default async function Home() {
               ))
             ) : (
               <div className="col-span-full rounded-xl border border-white/10 bg-white/5 p-12 text-center">
-                <p className="text-orcablue-100/80">No projects yet. Add some in the <a href="/studio" className="underline hover:text-white">Sanity Studio</a>.</p>
+<p className="text-orcablue-100/80">No projects yet. Add some in the <Link href="/studio" className="underline hover:text-white">Sanity Studio</Link>.</p>
               </div>
             )}
           </div>

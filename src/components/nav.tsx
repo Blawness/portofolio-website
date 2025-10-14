@@ -3,6 +3,7 @@
 import * as React from "react";
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Nav() {
   return (
@@ -10,7 +11,7 @@ export function Nav() {
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-3 text-white">
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/10">
-            <img src="/orca.svg" alt="Orca" className="h-5 w-5" />
+            <Image src="/orca.svg" alt="Orca" width={20} height={20} className="h-5 w-5" />
           </span>
           <span className="text-lg font-semibold tracking-wide">Vorca Studio</span>
         </Link>
