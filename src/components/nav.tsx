@@ -19,22 +19,7 @@ export function Nav() {
           <NavigationMenu.List className="hidden gap-6 text-sm text-orcablue-100 sm:flex">
             <NavigationMenu.Item>
               <Link className="hover:text-white/90" href="#work">
-                Work
-              </Link>
-            </NavigationMenu.Item>
-            <NavigationMenu.Item>
-              <Link className="hover:text-white/90" href="#services">
-                Services
-              </Link>
-            </NavigationMenu.Item>
-            <NavigationMenu.Item>
-              <Link className="hover:text-white/90" href="#about">
-                About
-              </Link>
-            </NavigationMenu.Item>
-            <NavigationMenu.Item>
-              <Link className="hover:text-white/90" href="#contact">
-                Contact
+                Portfolio
               </Link>
             </NavigationMenu.Item>
           </NavigationMenu.List>

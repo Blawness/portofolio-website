@@ -14,9 +14,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vorca Studio — Elegant Portfolio",
+  metadataBase: new URL("https://portfolio.vorcastudio.com"),
+  title: "Vorca Studio — Web Portfolio",
   description:
-    "Vorca Studio is a software agency crafting sleek, ocean-inspired digital experiences.",
+    "View the Vorca Studio web portfolio: selected web projects and case studies.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Vorca Studio — Web Portfolio",
+    description:
+      "View the Vorca Studio web portfolio: selected web projects and case studies.",
+    url: "https://portfolio.vorcastudio.com",
+    siteName: "Vorca Studio Portfolio",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vorca Studio — Web Portfolio",
+    description:
+      "View the Vorca Studio web portfolio: selected web projects and case studies.",
+  },
 };
 
 export default function RootLayout({
