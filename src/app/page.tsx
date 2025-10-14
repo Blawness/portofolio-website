@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { getProjects, urlFor } from "@/lib/sanity";
@@ -5,6 +7,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function Home() {
+  const scrollToWork = () => {
+    document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' });
+  };
   const projects = await getProjects();
 
   return (
