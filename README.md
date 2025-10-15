@@ -1,24 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Vorca Studio Portfolio
 
-## Getting Started
+A modern, portfolio-focused website built with Next.js 15 and Sanity CMS. Features a beautiful ocean-inspired design with smooth animations and a comprehensive project showcase system.
 
-First, run the development server:
+## ✨ Features
 
+- **Portfolio Showcase**: Dynamic project display with featured projects section
+- **Content Management**: Powered by Sanity CMS for easy project management
+- **Modern Design**: Ocean-inspired theme with smooth Framer Motion animations
+- **Responsive Layout**: Optimized for all device sizes
+- **Performance**: Built with Next.js 15 and Turbopack for fast development
+- **SEO Optimized**: Proper meta tags and structured data
+
+## 🚀 Getting Started
+
+1. **Install dependencies:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Set up environment variables:**
+Copy `.env.local.example` to `.env.local` and add your Sanity credentials.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Run the development server:**
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. **Open your browser:**
+Visit [http://localhost:3000](http://localhost:3000) to see the portfolio.
+
+5. **Access Sanity Studio:**
+Visit [http://localhost:3000/studio](http://localhost:3000/studio) to manage your projects.
 
 ## Learn More
 

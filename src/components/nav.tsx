@@ -17,10 +17,15 @@ export function Nav() {
         </Link>
 
         <NavigationMenu.Root>
-          <NavigationMenu.List className="hidden gap-6 text-sm text-orcablue-100 sm:flex">
+          <NavigationMenu.List className="hidden gap-8 text-sm text-orcablue-100 sm:flex">
             <NavigationMenu.Item>
-              <Link className="hover:text-white/90" href="#work">
+              <Link className="hover:text-white transition-colors" href="#work">
                 Portfolio
+              </Link>
+            </NavigationMenu.Item>
+            <NavigationMenu.Item>
+              <Link className="hover:text-white transition-colors" href="/studio">
+                Studio
               </Link>
             </NavigationMenu.Item>
           </NavigationMenu.List>
